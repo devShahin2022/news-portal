@@ -1,0 +1,111 @@
+/* body background color */
+body{
+    background-color: rgb(221, 221, 221);
+}
+
+/* profile wrapper */
+.profile-wrap{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(216, 216, 216);
+}
+/* card */
+.card{
+    border:0;
+}
+.card-title:hover{
+    cursor: pointer;
+    color: rgb(50, 117, 241);
+}
+/* arrow */
+.arrow-box{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+.arrow-box:hover{
+    background-color: rgb(50, 117, 241);
+}
+/*  publisher*/
+.news-publisher{
+    width:85%;
+    height: 85%;
+    border-radius: 50%;
+}
+/* form select */
+.form-select:hover{
+    cursor: pointer;
+}
+/* categories-push-id */
+#categories-push-id li{
+    font-size: .8rem;
+    font-weight: bold;
+    color:rgb(44, 44, 44);
+    cursor: pointer;
+}
+#categories-push-id li:hover{
+    text-decoration: underline;
+    color: rgb(50, 117, 241);
+}
+.active-cat{
+    text-decoration: underline !important;
+    color: rgb(50, 117, 241) !important;
+}
+
+/* media query */
+@media only screen and (max-width:768px){
+    #news-push-id img.thumbnail{
+        width:100% !important;
+    }
+}
+@media only screen and (max-width:800px){
+    #news-push-id img.thumbnail{
+        font-size: 10px !important;
+    }
+}
+@media only screen and (max-width:600px){
+    #news-push-id img.thumbnail{
+        font-size: 9px !important;
+    }
+}
+@media only screen and (max-width:400px){
+    #news-push-id img.thumbnail{
+        font-size: 2px !important;
+    }
+    h3{
+        font-size: 15px !important;
+        padding:4px !important;
+    }
+    h5{
+        font-size: 12px !important;
+        padding:4px !important;
+    }
+    h2{
+        font-size: 15px !important;
+        font-weight: bold !important;
+    }
+    p{
+        font-size: 12px !important;
+    }
+    .h5{
+        font-size: 16px !important;
+    }
+    i{
+        font-size: 12px !important;
+    }
+    i.fa-eye{
+        font-size: 15px !important;
+    }
+    .text-muted{
+        font-size: 12px !important;
+    }
+    button, select{
+        font-size: 12px !important;
+    }
+    .navbar-brand span{
+        font-size: 14px !important;
+    }
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latest news</title>
+    <!-- Bootstarp cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/custom.css">
+
+    <script src="https://kit.fontawesome.com/0d79a71488.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <div style="max-width:1400px;" class="m-auto">
+        <!-- header section -->
+        <header class="">
+            <!-- nav bar -->
+            <nav class="navbar navbar-expand-md bg-light border border-top-0 border-end-0 border-start-0 pb-4">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html"><span class="bg-primary p-2 rounded text-white">Latest</span> news</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active text-primary" aria-current="page" href="./index.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <div class="profile-wrap d-flex justify-content-center align-items-center">
+                          <img class="news-publisher"  src="./images/1.jpg" alt="image">
+                        </div>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <header class="sticky-md-top sticky-lg-top">
+            <!-- show category items -->
+            <nav class="navbar navbar-expand-md bg-light">
+                <div class="container-fluid ">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="categories-push-id" class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <p class="nav-item">
+                          <div class="spinner-grow" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                        </p>
+                        <p>
+                          Category name fetching...
+                        </p>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- header section end -->
+        <!-- main section start -->
+        <main class="container-fluid">
+            <!-- avialable items title section -->
+            <h3 id="data-found-result" class="p-4 bg-light my-4">
+
+            </h3>
+            <!-- sort section -->
+            <section class="sort-section">
+                <div class="row">
+                    <div class="col-md-6 mb-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="me-2">Sort By View:</h5>
+                            <select style="width:10rem;" class="form-select" aria-label="select example">
+                                <option selected>Max-min view</option>
+                                <option value="1">Min-max view</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-start text-lg-end text-md-end">
+                        <button class="btn btn-primary">Today's pick</button>
+                        <button class="btn btn-outline-primary">Trending</button>
+                    </div>
+                </div>
+            </section>
+            <!-- card section -->
+            <section class="card-section my-5">
+                <div id="news-push-id" class="card mb-3 bg-light p-2 pb-4">
+                </div>
+            </section>
+        </main>
+        <!-- footer section -->
+        <footer class="bg-dark text-light p-3 text-center mt-5">
+            <p>copyrights 2022</p>
+        </footer>
+    </div>
+<input type="hidden" value="" id="cat-id">
+    <!-- modal -->
+<!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div style="overflow:auto;" class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <section id="modal-news-push-id">
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    
+    <!-- Bootstarp js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- custom js link -->
+    <script type="text/javascript" src="./js/api.js"></script>
+</body>
+</html>
