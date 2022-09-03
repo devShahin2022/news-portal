@@ -203,10 +203,10 @@ function newsLoadInModal(data, clickedNews) {
     id("modal-news-push-id").innerHTML = '';
     id("modal-news-push-id").innerHTML = `
         <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-4 col-lg-4">
                 <img class="w-100" src="${data.data[clickedNews].thumbnail_url}" alt="images">
                 </div>
-                <div class="col-md-8">
+                <div class="col-12 col-md-8 col-lg-8">
                 <h2 class="my-2">${data.data[clickedNews].title || "Title not found!"}</h2>
                 <p class="my-3">${data.data[clickedNews].details || "Details not found!"}</p>
                 <div class="row my-4">
